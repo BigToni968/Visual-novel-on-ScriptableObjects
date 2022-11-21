@@ -1,0 +1,1 @@
+Creating a visual novel in unity based on ScriptableObject.
