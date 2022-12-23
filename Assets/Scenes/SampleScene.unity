@@ -246,6 +246,7 @@ MonoBehaviour:
   _commandBG: {fileID: 73654811}
   _commandSay: {fileID: 450009452}
   _commandChoise: {fileID: 560842541}
+  _commandCharacter: {fileID: 1538710414}
 --- !u!4 &86221545
 Transform:
   m_ObjectHideFlags: 0
@@ -1642,6 +1643,7 @@ GameObject:
   - component: {fileID: 1538710411}
   - component: {fileID: 1538710413}
   - component: {fileID: 1538710412}
+  - component: {fileID: 1538710414}
   m_Layer: 5
   m_Name: Character
   m_TagString: Untagged
@@ -1707,6 +1709,19 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
+--- !u!114 &1538710414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538710410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee3edd890e2d6ba438e13cf325daf17c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _self: {fileID: 1328548749}
 --- !u!1 &1640932340
 GameObject:
   m_ObjectHideFlags: 0

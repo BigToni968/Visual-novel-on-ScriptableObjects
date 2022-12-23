@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6b6aae1afe301044901bfaa4b8a29ee, type: 3}
-  m_Name: StartCommand
+  m_Script: {fileID: 11500000, guid: b70377752755e1b44ba2ef738677ff33, type: 3}
+  m_Name: StartGame
   m_EditorClassIdentifier: 
-  _commands:
+  _command:
   - {fileID: 11400000, guid: ea52eac248c54aa41a5df8e901dd4b0c, type: 2}
   - {fileID: 11400000, guid: 06fc660c934c6e845b07f84a1976b564, type: 2}
   - {fileID: 11400000, guid: 5b19be646352820439445dd3c61ff54f, type: 2}
@@ -20,5 +20,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f1dc39ba34e589546a546112a99e933b, type: 2}
   - {fileID: 11400000, guid: 9097bb9dbc50d7f428f583198b81cdc9, type: 2}
   - {fileID: 11400000, guid: b6c352b1bb47cad48a0008fec47d64f2, type: 2}
+  - {fileID: 11400000, guid: a8dc54bbe5a9bfb47a45efd0e6ccfc65, type: 2}
+  - {fileID: 11400000, guid: 2c8babbe569c83749b149887ae293ddc, type: 2}
   - {fileID: 11400000, guid: fd2d4e8c4ac039d4f8d82491c91f6640, type: 2}
   - {fileID: 11400000, guid: a8dc54bbe5a9bfb47a45efd0e6ccfc65, type: 2}
