@@ -16,3 +16,5 @@ MonoBehaviour:
   _name: Lucy
   _number: 2
   _type: 0
+  _stageStartPos: 1
+  _stageEndPos: 0

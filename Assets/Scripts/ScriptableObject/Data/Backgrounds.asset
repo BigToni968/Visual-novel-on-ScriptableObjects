@@ -10,14 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67c5db4e833b8134cbcee073b7bb6bb9, type: 3}
-  m_Name: Characters
+  m_Name: Backgrounds
   m_EditorClassIdentifier: 
   _storages:
-  - _name: Lucy
+  - _name: City
     _images:
-    - {fileID: 21300000, guid: a7ed89759711aef4695f536d87968fa2, type: 3}
-    - {fileID: 21300000, guid: 6c4be22465efff249a6d38051fc21fbf, type: 3}
-    - {fileID: 21300000, guid: af780d1528229f6439c675a5436c66d7, type: 3}
-  - _name: David
-    _images:
-    - {fileID: 21300000, guid: ddb634df08ac88343946063c533f3250, type: 3}
+    - {fileID: 21300000, guid: c14feded992fa2b46b676017697a48e3, type: 3}
+    - {fileID: 21300000, guid: 813949c54d66abb41ac49372aff32203, type: 3}
+    - {fileID: 21300000, guid: 61dc1b35b86b16a47b3f572712ad7839, type: 3}

@@ -15,4 +15,6 @@ MonoBehaviour:
   _storage: {fileID: 11400000, guid: 486e96c64da2ca64cadd83ba5d56e0b9, type: 2}
   _name: Lucy
   _number: 0
-  _type: 0
+  _type: 3
+  _stageStartPos: 2
+  _stageEndPos: 0

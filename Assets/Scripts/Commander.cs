@@ -53,9 +53,7 @@ public class Commander : MonoBehaviour
 
             case Game.Data.Character character:
                 _commandCharacter.End += EndCommand;
-
-                if (character.Type == CharacterType.Show)
-                    _commandCharacter.Show(character.GetSprite);
+                _commandCharacter.Execute(character.Get);
                 break;
 
             case Stop stop:
