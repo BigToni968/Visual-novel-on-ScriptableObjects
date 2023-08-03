@@ -8,10 +8,10 @@ public class Commander : MonoBehaviour
     [SerializeField] private ListCommand _listCommands;
 
     [Header("View")]
-    [SerializeField] private Game.View.BG _commandBG;
-    [SerializeField] private Say _commandSay;
-    [SerializeField] private Game.View.Choise _commandChoise;
-    [SerializeField] private Game.View.Character _commandCharacter;
+    [SerializeField] private BGView _commandBG;
+    [SerializeField] private SayView _commandSay;
+    [SerializeField] private ChoiseView _commandChoise;
+    [SerializeField] private CharacterView _commandCharacter;
 
     private int _indexCommand = 0;
     private int _indexBlockCommand = 0;
@@ -31,27 +31,38 @@ public class Commander : MonoBehaviour
                 Debug.Log($"Unknown command, type of command {_curentCommand.GetType().Name}");
                 break;
 
-            case Game.Data.BG bg:
+            case BG bg:
                 _commandBG.End += EndCommand;
 
-                if (bg.Type == Game.Data.BgType.show) _commandBG.Show(bg.Sprite);
-                else _commandBG.Hide();
-
+                if (bg.Type == BgType.show)
+                {
+                    if (bg.IsFade && bg.Duration > 0f)
+                        _commandBG.ShowFade(bg.Sprite, bg.Duration);
+                    else
+                        _commandBG.Show(bg.Sprite);
+                }
+                else
+                {
+                    if (bg.IsFade && bg.Duration > 0f)
+                        _commandBG.HideFade(bg.Duration);
+                    else
+                        _commandBG.Hide();
+                }
                 break;
 
-            case Game.Data.Monologue monologue:
+            case Monologue monologue:
                 _commandSay.End += EndCommand;
 
                 _commandSay.Something(monologue);
                 break;
 
-            case Game.Data.Choise choise:
+            case Choise choise:
                 _commandChoise.End += EndCommand;
 
                 _commandChoise.Add(choise.Choises);
                 break;
 
-            case Game.Data.Character character:
+            case Character character:
                 _commandCharacter.End += EndCommand;
                 _commandCharacter.Execute(character.Get);
                 break;

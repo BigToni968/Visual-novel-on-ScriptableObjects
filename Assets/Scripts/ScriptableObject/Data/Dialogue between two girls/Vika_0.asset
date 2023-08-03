@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: Vika_0
   m_EditorClassIdentifier: 
   _name: "\u0412\u0438\u043A\u0430"
+  _colorName: {r: 0, g: 0.46305752, b: 1, a: 1}
+  _colorSpeach: {r: 1, g: 1, b: 1, a: 1}
   _text: "\u0417\u043D\u0430\u0435\u0448\u044C, \u0430 \u043C\u043D\u0435 \u0442\u043E\u0436\u0435
     \u0442\u0430\u043A \u043A\u0430\u0436\u0435\u0442\u044C\u0441\u044F."

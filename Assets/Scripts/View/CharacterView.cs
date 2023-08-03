@@ -7,7 +7,7 @@ using System;
 
 namespace Game.View
 {
-    public class Character : MonoBehaviour, ICommand
+    public class CharacterView : MonoBehaviour, ICommand
     {
         [SerializeField] private float _timeCorotinue;
         [SerializeField] private Image _prefab;

@@ -3,7 +3,7 @@ using System;
 
 namespace Game.View
 {
-    public class Choise : MonoBehaviour, ICommand
+    public class ChoiseView : MonoBehaviour, ICommand
     {
         [SerializeField] private Canvas _self;
         [SerializeField] private Transform _parrent;

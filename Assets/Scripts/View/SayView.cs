@@ -5,12 +5,12 @@ using TMPro;
 
 namespace Game.View
 {
-    public class Say : MonoBehaviour, ICommand
+    public class SayView : MonoBehaviour, ICommand
     {
         [SerializeField] private Commander _commander;
         [SerializeField] private TextMeshProUGUI _name;
         [SerializeField] private TextMeshProUGUI _text;
-        [SerializeField] private Choise _choise;
+        [SerializeField] private ChoiseView _choise;
 
         [Header("Time write")]
         [SerializeField] private float _time;
@@ -50,6 +50,9 @@ namespace Game.View
                 End?.Invoke(this);
                 return;
             }
+
+            _name.color = monologue.ColorName;
+            _text.color = monologue.ColorSpeach;
 
             if (_write.SelfStatus == Game.Write.Status.Diabled) _coroutineWrite = StartCoroutine(_write.Get(monologue.Text));
 
