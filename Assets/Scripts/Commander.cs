@@ -77,6 +77,13 @@ public class Commander : MonoBehaviour
     {
         command.End -= EndCommand;
 
+        ChoiseView choiseCommand = command as ChoiseView;
+
+        if (choiseCommand != null)
+        {
+            _indexCommand = choiseCommand.LastChoiseIndex;
+        }
+
         if (_indexCommand < _curentBlock.GetCommand.Length - 1)
         {
             _indexCommand++;
